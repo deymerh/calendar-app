@@ -1,12 +1,11 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import Modal from 'react-modal';
 import DateTimePicker from 'react-datetime-picker';
 import moment from 'moment';
 import Swal from 'sweetalert2';
 import { useDispatch, useSelector } from 'react-redux';
 import { uiCloseModal } from '../../actions/ui';
-import { eventAddNew, eventClearActive, eventUpdated } from '../../actions/events';
-import { useEffect } from 'react';
+import { eventClearActive, eventStartAddNew, eventStartUpdate } from '../../actions/events';
 
 const customStyles = {
   content: {
@@ -76,9 +75,9 @@ export const CalendarModal = () => {
       return setTitleValid(false);
     }
     if (eventActive) {
-      dispatch(eventUpdated(formValues));
+      dispatch(eventStartUpdate(formValues));
     } else {
-      dispatch(eventAddNew({
+      dispatch(eventStartAddNew({
         ...formValues,
         id: new Date().getTime(),
         user: {
