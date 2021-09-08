@@ -1,0 +1,122 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Test in the component [<LoginScreen />] should do Snapshot the component [<LoginScreen />] 1`] = `
+<div>
+  <div
+    class="container login-container"
+  >
+    <div
+      class="row"
+    >
+      <div
+        class="col-md-6 login-form-1"
+      >
+        <h3>
+          Ingreso
+        </h3>
+        <form>
+          <div
+            class="form-group"
+          >
+            <input
+              class="form-control"
+              name="lEmail"
+              placeholder="Correo"
+              type="text"
+              value="deymerh@hotmail.com"
+            />
+          </div>
+          <div
+            class="form-group"
+          >
+            <input
+              class="form-control"
+              name="lPassword"
+              placeholder="Contraseña"
+              type="password"
+              value="123456"
+            />
+          </div>
+          <div
+            class="form-group"
+          >
+            <input
+              class="btnSubmit"
+              data-testid="bntLogin"
+              type="submit"
+              value="Login"
+            />
+          </div>
+        </form>
+      </div>
+      <div
+        class="col-md-6 login-form-2"
+      >
+        <h3>
+          Registro
+        </h3>
+        <form>
+          <div
+            class="form-group"
+          >
+            <input
+              class="form-control"
+              data-testid="rName"
+              name="rName"
+              placeholder="Nombre"
+              type="text"
+              value="Antonio"
+            />
+          </div>
+          <div
+            class="form-group"
+          >
+            <input
+              class="form-control"
+              data-testid="rEmail"
+              name="rEmail"
+              placeholder="Correo"
+              type="email"
+              value="deyer1227@gmail.com"
+            />
+          </div>
+          <div
+            class="form-group"
+          >
+            <input
+              class="form-control"
+              data-testid="rPassword1"
+              name="rPassword1"
+              placeholder="Contraseña"
+              type="password"
+              value="123456"
+            />
+          </div>
+          <div
+            class="form-group"
+          >
+            <input
+              class="form-control"
+              data-testid="rPassword2"
+              name="rPassword2"
+              placeholder="Repita la contraseña"
+              type="password"
+              value="123456"
+            />
+          </div>
+          <div
+            class="form-group"
+          >
+            <input
+              class="btnSubmit"
+              data-testid="btnRegister"
+              type="submit"
+              value="Crear cuenta"
+            />
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+`;

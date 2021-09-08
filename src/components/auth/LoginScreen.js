@@ -67,6 +67,7 @@ export const LoginScreen = () => {
                 type="submit"
                 className="btnSubmit"
                 value="Login"
+                data-testid="bntLogin"
                 disabled={loading}
               />
             </div>
@@ -84,6 +85,7 @@ export const LoginScreen = () => {
                 name="rName"
                 value={rName}
                 onChange={handleRegisterInputChange}
+                data-testid="rName"
               />
             </div>
             <div className="form-group">
@@ -94,6 +96,7 @@ export const LoginScreen = () => {
                 name="rEmail"
                 value={rEmail}
                 onChange={handleRegisterInputChange}
+                data-testid="rEmail"
               />
             </div>
             <div className="form-group">
@@ -103,6 +106,7 @@ export const LoginScreen = () => {
                 placeholder="Contraseña"
                 name="rPassword1"
                 value={rPassword1}
+                data-testid="rPassword1"
                 onChange={handleRegisterInputChange}
               />
             </div>
@@ -115,6 +119,7 @@ export const LoginScreen = () => {
                 name="rPassword2"
                 value={rPassword2}
                 onChange={handleRegisterInputChange}
+                data-testid="rPassword2"
               />
             </div>
 
@@ -124,6 +129,7 @@ export const LoginScreen = () => {
                 className="btnSubmit"
                 value="Crear cuenta"
                 disabled={loading}
+                data-testid="btnRegister"
               />
             </div>
           </form>

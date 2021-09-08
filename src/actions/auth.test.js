@@ -89,7 +89,6 @@ describe('Test in the actions [auth.js]', () => {
     }));
 
     await store.dispatch(startChecking());
-    const actions = store.getActions();
     expect(localStorage.setItem).toHaveBeenCalledWith('token', expect.any(String));
 
   });
