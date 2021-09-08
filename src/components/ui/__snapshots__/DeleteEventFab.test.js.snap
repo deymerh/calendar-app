@@ -1,0 +1,3 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Test in the file [DeleteEventFab] should do Snapshot the component [<DeleteEventFab />] 1`] = `undefined`;
